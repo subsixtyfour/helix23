@@ -59,13 +59,13 @@ As such, those are in use within the default layer at this time.*/
  // |       |       |       |    )  |   =   |   _   |                                    |       |       |       |       |       |       |
  // |       |   ^   |       |       |   %   |       |                                    |       |       |       |       |       |       |
  // |   #   |       |       |       |       |       |                                    |       |       |   $   |       |       |       |
- // |       |       |       |       |       |       |       |                    |       |   LT  |       |   *   |       |       |       |
+ // |       |       |       |       |   &   |       |       |                    |       |   LT  |       |   *   |       |       |       |
  // |       |       |       |       |       |       |       |                    |       |       |       |       |       |       |       |
                      bindings = <
        &trans    &trans    &trans &kp LBKT &kp EQUAL &kp UNDER                      &trans  &trans    &trans     &trans     &trans    &trans
        &trans    &kp CARET &trans &trans   &kp PRCNT &trans                         &trans  &trans    &trans     &trans     &trans    &trans
        &kp HASH  &trans    &trans &trans   &trans    &trans                         &trans  &kp MINUS &kp RBKT   &trans     &trans    &trans
-       &trans    &trans    &trans &trans   &trans    &trans  &trans          &trans &kp LT  &trans    &kp BSLH   &trans     &trans    &trans
+       &trans    &trans    &trans &trans   &kp AMPS  &trans  &trans          &trans &kp LT  &trans    &kp BSLH   &trans     &trans    &trans
        &trans    &trans    &trans &trans   &trans    &trans  &trans          &trans &trans  &trans    &trans     &trans     &trans    &trans 
                      >;
               };
