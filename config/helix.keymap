@@ -41,17 +41,17 @@ As such, those are in use within the default layer at this time.*/
               };
               lower_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |                                  |  BT1 |  F1  |  F2  |  F3  |  F4  |  F5  |
- // |      |      |      |      |      |      |                                  |  BT2 |      |      |      |      |      |
- // |      |      |      |      |      |      |                                  |  BT3 |      |      |      |      |      |
- // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      |      |      |BT_Clr|
- // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
+ // |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |                                  |  BT1 |  F1   |  F2   |  F3   |  F4  |  F5  |
+ // |      |      |      |      |      |      |                                  |  BT2 |       |       |       |      |      |
+ // |      |      |      |      |      |      |                                  |  BT3 |       |       |       |      |      |
+ // |      |      |      |      |      |      |  (   |                    |  )   |      |       |       |       |      |BT_Clr|
+ // |      |      |      |      |      |      |      |                    |      |      |OUT BLE|OUT TOG|OUT USB|      |      |
                      bindings = <
-       &kp F6    &kp F7   &kp F8 &kp F9   &kp F10   &kp F11                        &bt BT_SEL 1 &kp F1    &kp F2     &kp F3    &kp F4   &kp F5
-       &trans    &trans   &trans &trans   &trans    &trans                         &bt BT_SEL 2 &trans    &trans     &trans    &trans   &trans
-       &trans    &trans   &trans &trans   &trans    &trans                         &bt BT_SEL 3 &trans    &trans    &trans     &trans   &trans
-       &trans    &trans   &trans &trans   &trans    &trans   &trans         &trans &trans       &trans    &trans    &trans     &trans   &bt BT_CLR
-       &trans    &trans   &trans &trans   &trans    &trans   &trans         &trans &trans       &trans    &trans     &trans    &trans   &trans
+       &kp F6    &kp F7   &kp F8 &kp F9   &kp F10   &kp F11                        &bt BT_SEL 1 &kp F1       &kp F2       &kp F3        &kp F4   &kp F5
+       &trans    &trans   &trans &trans   &trans    &trans                         &bt BT_SEL 2 &trans       &trans       &trans        &trans   &trans
+       &trans    &trans   &trans &trans   &trans    &trans                         &bt BT_SEL 3 &trans       &trans       &trans        &trans   &trans
+       &trans    &trans   &trans &trans   &trans    &trans   &trans         &trans &trans       &trans       &trans       &trans        &trans   &bt BT_CLR
+       &trans    &trans   &trans &trans   &trans    &trans   &trans         &trans &trans       &out OUT_BLE &out OUT_TOG &out OUT_USB  &trans   &trans
                      >;
               };
               raise_layer {
